@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clase EDteam CSS</title>
+  <!-- Normalize tiene propiedades CSS para poder modificar valores que los browsers tienen -->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/cbody.css">
+</head>
+<body>
+  <h1>Variables</h1>
+  <p>Las variables en CSS son propiedades establecidas una sola ves, las cuales pueden ser ocupadas tantas vesces que las necesites dentro de las reglas del estilo de hoja de la pagina.</p>
+  <p>:root{ --nombreVariable: valorVariable }</p>
+
+  <p class="select1">Selectores agrupados</p>
+  <p class="select2">Ese tipo de seleccion en CSS es una regla de estilo, separados por coma, se puden agrupar tantos clases o etiquetas que sean necesarias</p>
+
+  <h1 class="title1">Titulo 1</h1>
+  <p class="subtitle">Subtitulo del titulo 1 (teniendo la misma clase, con selector "hermano sigueinte" se puede establecer diferentes reglas de estilo)</p>
+  <h1 class="title2">Titulo 2</h1>
+  <p class="subtitle">Subtitulo del titulo 2</p>
+  <br>
+  <h2>Hemano siguiente</h2>
+  <input type="checkbox" class="check">
+  <p class="enabled">Check Activado</p>
+  <p class="disabled">Check Desactivado</p>
+  <h1>Los selectores de atributo</h1>
+  <p>se encuentran encerrados en corchetes y dentro van las propiedas que se encuentran en html -  [type="date"]{ declaracion de estilo }</p>
+  <input type="email">
+  <input type="date" required>
+  <input type="submit" value="Enviar">
+  <h2>Selectores con atributos comienza con</h2>
+  <a href="/miPagina">Pag. local</a>
+  <a href="http://miPagina.com">Pag. local</a>
+  <a href="http://youtube.com">Pag. Externa</a>
+</body>
+</html>
