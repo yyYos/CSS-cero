@@ -1,0 +1,47 @@
+:root {
+  --primary: white;
+  --secundary: black;
+}
+
+body, p, a, ul, li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 10% 70% 20%;
+  grid-gap: 10px;
+  grid-template-areas: "menu menu menu" "main main main" "footer footer footer";
+}
+
+.header {
+  background: pink;
+  min-width: 80%;
+  grid-area: menu;
+}
+
+aside {
+  background: purple;
+  grid-area: aside;
+}
+
+.main {
+  background: orange;
+  min-width: 80%;
+  grid-area: main;
+}
+
+.footer {
+  background: peru;
+  min-width: 80%;
+  grid-area: footer;
+}
+/*# sourceMappingURL=style_grid.css.map */
