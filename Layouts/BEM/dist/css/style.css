@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-size: sans-serif;
+  font-family: Arial;
 }
 
 .main-menu {
@@ -11,7 +11,6 @@ body {
   background: #cccccc;
   text-align: center;
   display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -33,5 +32,40 @@ body {
 
 .main-menu__link--active {
   border-bottom: 2px solid;
+}
+
+.main-buttons {
+  margin: 2rem 2rem 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.button {
+  padding: 1rem;
+  margin-top: 1rem;
+  min-width: 10rem;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+}
+
+.button--orange {
+  background: #ffc107;
+}
+
+.button--active {
+  color: #ffffff;
+  background: #28a745;
+}
+
+.button--inactive {
+  color: #ffffff;
+  background: #dc3545;
+}
+
+.button--block {
+  display: block;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
