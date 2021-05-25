@@ -68,4 +68,17 @@ body {
   display: block;
   width: 100%;
 }
+
+.images {
+  margin: 2rem 2rem 0 2rem;
+  box-sizing: border-box;
+}
+
+.img-container {
+  max-width: 50%;
+}
+
+.img {
+  width: 100%;
+}
 /*# sourceMappingURL=style.css.map */
