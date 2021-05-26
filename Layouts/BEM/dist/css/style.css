@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  margin-bottom: 20px;
   font-family: Arial;
 }
 
@@ -76,9 +77,89 @@ body {
 
 .img-container {
   max-width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-container::before {
+  content: '';
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  position: absolute;
+  transition: transform 0.3s;
+}
+
+.img-container::before {
+  backdrop-filter: blur(10px);
+}
+
+.img-container--bottom::before,
+.img-container--bottom .content-after--slace {
+  transform: translateY(100%);
+}
+
+.img-container:hover.img-container--bottom::before,
+.img-container:hover .content-after--slace {
+  transform: translateY(0);
 }
 
 .img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+.content-after {
+  max-width: 20%;
+  position: absolute;
+  top: 0;
+  transition: transform 0.3s;
+}
+
+.content-after img {
   width: 100%;
+}
+
+.content-article {
+  max-width: 50%;
+  height: 330px;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.content-article img {
+  max-width: 100%;
+}
+
+.content-img {
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  position: absolute;
+  backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s;
+  transform: translateY(100%);
+}
+
+.content-img img {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.content-img img:hover {
+  transition: transform 0.3s;
+  transform: scale(1.1);
+}
+
+.content-article:hover .images-active {
+  transform: translateY(0);
 }
 /*# sourceMappingURL=style.css.map */
