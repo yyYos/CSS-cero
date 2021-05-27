@@ -1,0 +1,10 @@
+body{
+    margin: 15px;
+    font-size: Arial;
+    font-size: 12px;
+}
+*::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
