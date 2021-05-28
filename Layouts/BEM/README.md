@@ -13,9 +13,9 @@ Ejemplos: header, container, menu, checkbox, input.
 Declara un Element(BEM), los cuales son elementos HTML que se encuentran dentro de un elemento Block y estan semanticamente ligados a su bloque
 Ejemplos: menu item, list item, header title.
 - Aclarar que no es necesario agregar siempre guión tras guión, con el echo de tener uno nombre para cada Element ya no se recae en el error de tener nombres de clases interminables.
-- Se agrega despues de un guión, el nombre anterior es nombre de el Block (BEM)
-    <a class:"nav-menu"></a>
+- Se agrega despues de un guión bajo, el nombre anterior es nombre de el Block (BEM)
+    <a class:"form__field"></a>
 
 Declarar un elemento Modifier, se agrega la clase del elemento hablando de BEM seguido de dos guiones --, los cuales son elementos HTML que modifican su estado y  su apariencia (color, tamaño, animación, etc ).
 Ejemplo: disabled, checked, fixed, size, color
-     <a class:"nav-menu__item--active"></a>
+     <a class:"form__item--active"></a>
